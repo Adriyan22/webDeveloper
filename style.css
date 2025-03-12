@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--cor-de-texto);
+}
+
+:root{
+    --cor-de-fundo: rgba(0, 0, 136, 0.811);
+    --cor-de-texto: #888;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--cor-de-fundo);
+}
+
+#cabecalho-de-navegacao {
+    position: relative;
+}
+
+.lista-de-navegacao {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1.3em;
+    background-color: rgba(0, 136, 136, 0.402);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.menu-item {
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease-in-out;
+    color: #fff !important;
+}
+
+.menu-item::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    border-radius: 10px;
+    margin: 5px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.menu-item:hover::after {
+    width: 100%;
+    background-color: #acd;
+}
+
+#sobre-meu-perfil {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20vh 0 0 0;
+
+}
+
+.imagem-de-perfil {
+    border: 3px solid var(--cor-de-texto);
+    box-shadow: 0 0 20px #ffffff62;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-image: url('./perfil.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 10% 0 3% 0;
+}
+
+.profissao {
+    width: 70%;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.profissao:hover {
+    color: #fff;
+}
+
+.profissao::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: #acd;
+    transition: 0.3s ease-in-out;
+    margin: 5px 0;
+}
+
+.profissao:hover::after {
+    width: 100%;
+}
+
+p {
+    width: 95%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 0 0 0;
+}
+
+p::after {
+    content: "experiências";
+    display: block;
+    margin: 40px 0 0 0;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin:  10%  0;
+    color: #888 !important;
+    transition: 0.3s ease-in-out;
+}
+
+p:hover::after {
+    color: #fff !important;
+}
+
+.experiencias {
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.fa-brands {
+    font-size: 3rem;
+    transition: 0.3s ease-in-out;
+}
+
+.fa-html5:hover {
+    color: rgba(255, 0, 0, 0.744);
+}
+
+.fa-css3-alt:hover {
+    color: rgb(78, 78, 178);
+}
+
+.fa-js:hover {
+    color: #ff0;
+}
+
+#projetos {
+    min-height: 80vh;
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% auto;
+    position: relative;
+}
+
+h2 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+}
+
+h2:hover {
+    color: #fff;
+}
+
+
+/* SEÇÃO DE PROJETOS */
+
+/* perfil adrieli */
+
+.perfil-adrieli {
+    overflow: hidden;
+    height: 300px;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ffffff77;
+    display: flex;
+    position: relative;
+}
+
+img[alt="sombrancelha"] {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/*perfil rhayane*/
+.perfil-rhayane {
+    overflow: hidden;
+    height: 300px;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ffffff77;
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+img[alt="trança"]{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* perfil thayane*/
+.perfil-thayane {
+    overflow: hidden;
+    height: 300px;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ffffff77;
+    display: flex;
+    position: relative;
+}
+
+a.site-oficial {
+    z-index: 9999 !important;
+    text-align: center;
+    text-indent: 10px;
+    text-decoration: none;
+    color: #359;
+    transition: 0.3s ease-in-out;
+    padding:  10px 0 0 0;
+}
+
+a.site-oficial:active {
+    color: #000000bd;
+}
+
+img[alt="unha"]{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.img-perfil {
+    height: 100%;
+    width: 100%;
+    transform: translate(400%);
+    position: absolute;
+}
+
+
+/* FIM SEÇÃO DE PROJETOS */
+
+.lista-redes-sociais{
+    min-height: 20vh;
+    width: 100vw;
+    max-width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.redes-sociais a {
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.fa-brands::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #acd;
+    margin: 10px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.fa-brands:hover::after {
+    width: 100%;
+}
+
+.fa-whatsapp:hover {
+    color: #080;
+}
+
+.fa-instagram:hover {
+    color: rgb(134, 0, 136);
+}
+
+.fa-facebook:hover {
+    color: #359;
+}
+
+
+.fa-github:hover {
+    color: #111;
+}
+
+
+.fa-envelope:hover {
+    color: #fff;
+}
+
+.fa-envelope::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #acd;
+    margin: 7px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.fa-envelope:hover::after {
+    width: 100%;
+}
+
+
+@media (min-width: 300px) and (max-width: 800px){
+    
+    #cabecalho-de-navegacao {
+        position: relative;
+    }
+
+    .lista-de-navegacao {
+        background-color: rgba(0, 136, 136, 0.29);
+        position: fixed;
+        z-index: 999;
+    }
+    
+    #projetos {
+        min-height: 40vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 40px;
+        position: relative;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        position: absolute;
+    }
+
+
+    
+    .perfil-adrieli {
+        overflow: hidden;
+        height: 300px;
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 0 15px #ffffff77;
+        display: flex;
+        margin: 150px 0 0 0;
+    }
+    
+    img[alt="sombrancelha"] {
+        height: 100%;
+        width: 100%; 
+    }
+    
+    /*perfil rhayane*/
+    .perfil-rhayane {
+        overflow: hidden;
+        height: 300px;
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 0 15px #ffffff77;
+        display: flex;
+    }
+    
+    img[alt="trança"]{
+        height: 100%;
+        width: 100%;
+    }
+    
+    /* perfil thayane*/
+    .perfil-thayane {
+        overflow: hidden;
+        height: 300px;
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 0 15px #ffffff77;
+        display: flex;
+    }
+    
+    img[alt="unha"]{
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    a.site-oficial {
+        z-index: 9999 !important;
+        text-align: center;
+        text-decoration: none;
+        color: #359;
+        padding: 15px 0 0 0;
+    }
+    
+
+}
+
