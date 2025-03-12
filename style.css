@@ -34,7 +34,7 @@ body {
     background-color: rgba(0, 136, 136, 0.402);
     position: fixed;
     top: 0;
-    z-index: 999;
+    z-index: 999 !important;
 }
 
 .menu-item {
@@ -236,7 +236,7 @@ img[alt="trança"]{
 }
 
 a.site-oficial {
-    z-index: 9999 !important;
+    z-index: 9999;
     text-align: center;
     text-indent: 10px;
     text-decoration: none;
